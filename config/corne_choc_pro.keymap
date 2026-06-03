@@ -60,16 +60,16 @@
                 &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp LCTRL &kp RCTRL &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
                 &kp LCTRL &uc 0x00E4 0 &uc 0x00F6 0 &uc 0x00FC 0 &uc 0x20AC 0 &trans &kp LALT &kp RALT &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
                 &kp LSHFT &trans   &trans &trans   &trans   &trans                        &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE
-                                          &kp LGUI &trans   &kp SPACE                     &kp RET   &trans    &kp RALT
+                                          &kp LGUI &mo 3    &kp SPACE                     &kp RET   &trans    &kp RALT
             >;
         };
 
         extra_layer_1 {
-            display-name = "WINDOW";
+            display-name = "WIN";
             bindings = <
                 &kp LA(A) &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans    &trans &trans &trans &trans &trans               &kp LA(LEFT) &kp LA(DOWN) &kp LA(UP) &kp LA(RIGHT) &trans &trans
+                &trans    &trans &trans &trans &trans &trans &trans &trans &kp LA(LEFT) &kp LA(DOWN) &kp LA(UP) &kp LA(RIGHT) &trans &trans
+                &trans    &trans &trans &trans &trans &trans               &trans       &trans       &trans     &trans        &trans &trans
                                           &trans &trans &trans               &trans &trans &trans
             >;
         };
