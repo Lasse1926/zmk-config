@@ -13,9 +13,7 @@
     chosen {
         zmk,physical-layout = &default_layout;
     };
-};
 
-/ {
     behaviors {
 
         ae: ae {
