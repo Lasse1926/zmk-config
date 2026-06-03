@@ -67,11 +67,10 @@
         extra_layer_1 {
             display-name = "WINDOW";
             bindings = <
-                &LA(A) &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &kp LA(LEFT) &kp LA(DOWN) &kp LA(UP) &kp LA(RIGHT) &trans &trans
-                &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans       
+                &kp LA(A) &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans    &trans &trans &trans &trans &trans               &kp LA(LEFT) &kp LA(DOWN) &kp LA(UP) &kp LA(RIGHT) &trans &trans
+                                          &trans &trans &trans               &trans &trans &trans
             >;
         };
 
