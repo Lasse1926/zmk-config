@@ -68,7 +68,7 @@
             display-name = "WIN";
             bindings = <
                 &kp LA(A) &trans          &kp LA(F4)      &trans        &trans          &trans &trans &trans &trans       &trans        &trans      &trans        &trans &kp DELETE
-                &trans    &trans  &trans  &trans  &trans &trans &trans &trans &kp LA(LEFT) &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT) &trans &trans
+                &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT &trans &trans &trans &kp LA(LEFT) &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT) &trans &trans
                 &trans    &kp LG(LS(S))   &kp LG(LS(T))   &trans        &trans          &trans               &trans       &trans        &trans      &trans        &trans &trans
                                                           &trans        &trans          &trans               &trans       &trans        &trans
             >;
