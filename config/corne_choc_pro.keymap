@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/pointing.h>
-#include "corne_choc_pro.behaviors.dtsi"
+/* #include "corne_choc_pro.behaviors.dtsi" */
 
 / {
     chosen {
