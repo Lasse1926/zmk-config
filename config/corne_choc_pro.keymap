@@ -13,60 +13,22 @@
 
 / {
     behaviors {
-        uc_ae_l: uc_ae_l {
-            compatible = "zmk,behavior-unicode";
-            #binding-cells = <0>;
-            code-point = <0x00E4>;
-            default-mode = <0>;
-        };
-        uc_ae_u: uc_ae_u {
-            compatible = "zmk,behavior-unicode";
-            #binding-cells = <0>;
-            code-point = <0x00C4>;
-            default-mode = <0>;
-        };
         ae_key: ae_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&uc_ae_l>, <&uc_ae_u>;
+            bindings = <&uc 0x00E4 0>, <&uc 0x00C4 0>; /* ä / Ä */
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        uc_oe_l: uc_oe_l {
-            compatible = "zmk,behavior-unicode";
-            #binding-cells = <0>;
-            code-point = <0x00F6>;
-            default-mode = <0>;
-        };
-        uc_oe_u: uc_oe_u {
-            compatible = "zmk,behavior-unicode";
-            #binding-cells = <0>;
-            code-point = <0x00D6>;
-            default-mode = <0>;
         };
         oe_key: oe_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&uc_oe_l>, <&uc_oe_u>;
+            bindings = <&uc 0x00F6 0>, <&uc 0x00D6 0>; /* ö / Ö */
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        uc_ue_l: uc_ue_l {
-            compatible = "zmk,behavior-unicode";
-            #binding-cells = <0>;
-            code-point = <0x00FC>;
-            default-mode = <0>;
-        };
-        uc_ue_u: uc_ue_u {
-            compatible = "zmk,behavior-unicode";
-            #binding-cells = <0>;
-            code-point = <0x00DC>;
-            default-mode = <0>;
         };
         ue_key: ue_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&uc_ue_l>, <&uc_ue_u>;
+            bindings = <&uc 0x00FC 0>, <&uc 0x00DC 0>; /* ü / Ü */
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
