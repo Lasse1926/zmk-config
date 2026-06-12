@@ -9,29 +9,58 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/pointing.h>
-#include "corne_choc_pro.behaviors.dtsi"
 #include <behaviors/unicode.dtsi>
 
 / {
     behaviors {
+        uc_ae_l: uc_ae_l {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <0>;
+            code-point = <0x00E4>;
+        };
+        uc_ae_u: uc_ae_u {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <0>;
+            code-point = <0x00C4>;
+        };
         ae_key: ae_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&uc 0x00E4>, <&uc 0x00C4>; /* ä / Ä */
+            bindings = <&uc_ae_l>, <&uc_ae_u>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        uc_oe_l: uc_oe_l {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <0>;
+            code-point = <0x00F6>;
+        };
+        uc_oe_u: uc_oe_u {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <0>;
+            code-point = <0x00D6>;
+        };
         oe_key: oe_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&uc 0x00F6>, <&uc 0x00D6>; /* ö / Ö */
+            bindings = <&uc_oe_l>, <&uc_oe_u>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        uc_ue_l: uc_ue_l {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <0>;
+            code-point = <0x00FC>;
+        };
+        uc_ue_u: uc_ue_u {
+            compatible = "zmk,behavior-unicode";
+            #binding-cells = <0>;
+            code-point = <0x00DC>;
+        };
         ue_key: ue_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&uc 0x00FC>, <&uc 0x00DC>; /* ü / Ü */
+            bindings = <&uc_ue_l>, <&uc_ue_u>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
