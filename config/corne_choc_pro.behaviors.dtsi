@@ -1,4 +1,3 @@
-#include <behaviors/unicode.dtsi>
 / {
     behaviors {
         ae_key: ae_key {
