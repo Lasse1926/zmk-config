@@ -17,11 +17,13 @@
             compatible = "zmk,behavior-unicode";
             #binding-cells = <0>;
             code-point = <0x00E4>;
+            default-mode = "DEFAULT";
         };
         uc_ae_u: uc_ae_u {
             compatible = "zmk,behavior-unicode";
             #binding-cells = <0>;
             code-point = <0x00C4>;
+            default-mode = "DEFAULT";
         };
         ae_key: ae_key {
             compatible = "zmk,behavior-mod-morph";
@@ -34,11 +36,13 @@
             compatible = "zmk,behavior-unicode";
             #binding-cells = <0>;
             code-point = <0x00F6>;
+            default-mode = "DEFAULT";
         };
         uc_oe_u: uc_oe_u {
             compatible = "zmk,behavior-unicode";
             #binding-cells = <0>;
             code-point = <0x00D6>;
+            default-mode = "DEFAULT";
         };
         oe_key: oe_key {
             compatible = "zmk,behavior-mod-morph";
@@ -51,11 +55,13 @@
             compatible = "zmk,behavior-unicode";
             #binding-cells = <0>;
             code-point = <0x00FC>;
+            default-mode = "DEFAULT";
         };
         uc_ue_u: uc_ue_u {
             compatible = "zmk,behavior-unicode";
             #binding-cells = <0>;
             code-point = <0x00DC>;
+            default-mode = "DEFAULT";
         };
         ue_key: ue_key {
             compatible = "zmk,behavior-mod-morph";
